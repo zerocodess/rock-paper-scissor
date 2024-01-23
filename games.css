@@ -1,48 +1,100 @@
-.result-images {
-    display: flex;
-    column-gap: 7rem;
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.result-images img {
-    width: 100px;
+.move {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.movesleft {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* Score  */
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* displaying three buttons in one line */
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  align-items: center;
+  /* opacity: 0.5; */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* .options:hover {
+  opacity: 1;
+}
+ */
+/* .options:active {
+  opacity: 1;
+} */
+
+.options img {
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.options p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  pointer-events: none;
+}
+
+/* Styling on all three buttons */
+.rock img,
+.paper img,
+.scissors img {
+  width: 50px;
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3 ease-in-out;
+}
+
+.rock:hover img,
+.paper:hover img,
+.scissors:hover img {
+  opacity: 1;
+}
+
+/* Reload button style */
+.reload {
+  display: none;
+  margin-top: 2rem;
+  padding: 1em 0.8em;
+  background-color: #fff;
+  border: 3px solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .result {
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.2rem;
 }
 
-.option-images img {
-    width: 50px;
-}
-
-.option-images {
-    display: flex;
-    align-items: center;
-    margin-top: 2.5rem;
-    justify-content: space-between;
-}
-
-.option-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0.5;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.option-image:hover {
-    opacity: 1;
-}
-
-.option-image img {
-    pointer-events: none;
-}
-
-.option-image p {
-    font-size: 1.235rem;
-    margin-top: 1rem;
-    pointer-events: none;
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
 }

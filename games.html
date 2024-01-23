@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="container">
-        <div class="result-field">
-            <div class="result-images">
-                <span class="user-result">
-                    <img src="images/rock.png" alt="">
-                </span>
-                <span class="computer-result">
-                    <img src="images/rock.png" alt="">
-                </span>
-            </div>
-            <div class="result">
-                Lets play!
-            </div>
+      <!-- Display Score of player and computer -->
+      <div class="score">
+        <div class="playerScore">
+          <p>Player</p>
+          <p class="p-count count">0</p>
         </div>
 
-        <div class="option-images">
-            <span class="option-image">
-                <img src="images/rock.png" alt="">
-                <p>Rock</p>
-            </span>
-            <span class="option-image">
-                <img src="images/paper.png" alt="">
-                <p>Paper</p>
-            </span>
-            <span class="option-image">
-                <img src="images/scissors.png" alt="">
-                <p>Scissors</p>
-            </span>
+        <div class="computerScore">
+          <p>Computer</p>
+          <p class="c-count count">0</p>
         </div>
+      </div>
+
+      <div class="move">Choose your move</div>
+
+      <!-- Number of moves left before game ends -->
+      <div class="movesleft">Moves Left: 10</div>
+
+      <!-- Options available to player to play game -->
+      <div class="options">
+        <span class="rock">
+          <img src="images/rock.png" alt="" />
+          <p>Rock</p>
+        </span>
+        <span class="paper">
+          <img src="images/paper.png" alt="" />
+          <p>Paper</p>
+        </span>
+        <span class="scissors">
+          <img src="images/scissors.png" alt="" />
+          <p>Scissors</p>
+        </span>
+      </div>
+
+      <!-- Final result of game -->
+      <div class="result"></div>
+
+      <!-- Reload the game -->
+      <div class="reload"></div>
     </section>
-</body>
+
+    <script src="app.js"></script>
+  </body>
 </html>
