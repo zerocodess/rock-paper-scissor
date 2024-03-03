@@ -1,19 +1,12 @@
-.score {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .move {
   text-align: center;
   font-size: 2rem;
-  margin-top: 3rem;
 }
 
 .movesleft {
   text-align: center;
-  margin-top: 2rem;
-  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  font-size: 1rem;
 }
 
 /* Score  */
@@ -27,20 +20,11 @@
 .options {
   display: flex;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 3rem;
   align-items: center;
-  /* opacity: 0.5; */
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
-
-/* .options:hover {
-  opacity: 1;
-}
- */
-/* .options:active {
-  opacity: 1;
-} */
 
 .options img {
   pointer-events: none;
@@ -82,10 +66,34 @@
   cursor: pointer;
 }
 
-.result {
-  margin-top: 20px;
-  font-size: 1.2rem;
+.scores {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.3rem;
 }
+
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+/* .result-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.result-images img {
+  width: 50px;
+} */
 
 /* Responsive Design */
 @media screen and (max-width: 612px) {
